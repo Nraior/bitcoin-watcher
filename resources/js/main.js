@@ -43,7 +43,6 @@ class Price{
 	getAllCryptos(){	//crypto data from coinmarketcap todo
 		fetch('https://api.coinmarketcap.com/v1/ticker/').then(data => data.json().then(jsondata => {
 			this.allCryptos = jsondata;
-			//console.log(this.allCryptos);
 			}
 		));
 	}
@@ -82,7 +81,6 @@ class Price{
 			if(this.color){
 				this.watcherDOM.style.color = this.color;
 			}
-			console.log(this.alarmType);
 			if(this.alarmSwitch){
 				if(this.alarmType == "below" && this.curPrice < Number(alarmInput.value) ){
 					alarm.play();
