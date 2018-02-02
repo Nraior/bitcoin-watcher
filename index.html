@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bitcoin Watcher</title>
+	<link rel = "stylesheet" href="resources/css/style.css"></link>
+	<link rel = "stylesheet" href="resources/icons/css/fontello.css"></link>
+	  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<nav>
+		<div class = "navleft">
+			<h1>Bitcoin Watcher</h1>
+		</div>
+		<div class = "navright">
+			<ul>
+				<li><div class = "select-container"><div class = "caret">&#x25BC</div><select class = "currency"></select></div></li>
+				<li><a>Alarm <span class = "alarmState">OFF</span></a></li>
+				<li><a href = "http://github.com/Nairorox/"  target= "_blank">My Github</a></li>
+				<li><div class = "fontello-container"><i class = "fontello-style icon-moon"></i></li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+		<div class = "btcContainer">Bitcoin(Live): 
+			<span class = "btcPrice"> 
+			</span>
+		</div><br>
+		Back to the 20k:
+		<meter value = 0 class = "twkMeter"></meter> <span class = "twkPercentage"></span><br>
+		Road to Lamborghini Aventador:
+		<meter class = "lamboMeter" value = 0></meter> <span class = "lamboPercentage"></span>
+		<div class = "alarmContainer">
+			<h3>Alarm Options</h3>
+							Alarm when <span class = "alarmSwitch">below</span>: <input type = "number" class = "alarmInput"> <span class = "currency"><br><br>
+				Will play alarm sound when value of bitcoin reach specified value<br><br>
+				<p>This window should remain open for proper alarm work</p>
+		</div>
+	</main>
+<script src = "resources/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+body{
+	margin:0;
+	background-image: url("../images/bitcoin-2007769_1920.jpg");
+	background-size: cover;
+	width:100%;
+	height:100vh;
+}
+
+nav{
+	background-color: #fdfdfd;
+	display:flex;
+	padding-left:20px;
+	overflow:hidden;
+	box-shadow: 2px 2px 18px black;
+}
+
+nav > .navright > ul{
+	list-style-type: none;
+	display:flex;
+	margin:0;
+	right:0;
+}
+.navleft{
+	width:100%;
+}
+
+.fontello-container{
+	position:relative;
+	width:100%;
+	height:100%;
+	display:flex;
+}
+
+.fontello-style{
+	transition:all 2s;
+	vertical-align: center;
+	margin:auto;
+	width:70px;
+	font-size:75px;
+}
+
+  ul > li{
+	flex: 1 1 auto;
+	padding:0;
+	width:16vw;
+	overflow:hidden;
+}
+
+nav > .navright > ul > li > * {
+	cursor:pointer;
+}
+
+nav > .navright > ul > li:hover{
+	background-color: #eeeeee;
+}
+
+
+select{
+	width:100%;
+	height:100%;
+	font-size: 30px;
+	border:none;
+	overflow:hidden;
+	/*
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	to custom
+	*/background-color: gold;
+	-moz-appearance: none;
+
+}
+
+.select-container{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+
+	.caret{
+		position:absolute;
+		height:25px;
+		margin-top:auto;
+		margin-bottom:auto;
+		right:0;
+		top:0;
+		bottom:0;
+		vertical-align: middle;
+	}
+
+a{
+	display:inline-block;
+	width:100%;
+	padding:30px;
+	font-size:20px;
+	text-decoration: none;
+	color:black;
+}
+
+.currency:hover{
+	/*background-color:#ffc400;
+*/}
+
+main{
+	width:70%;
+	margin: auto;
+	margin-top:5vh;
+	background-image:url('../images/geometry.png');
+	opacity:0.991;
+	padding:20px;
+	box-shadow:2px 2px 15px;
+	overflow-y:auto;
+	box-shadow: 1px 1px 18px black;
+}
+
+.btcContainer{
+	font-size:50px;
+}
+h3{
+	text-align:center;
+}
+
+.nightMode{
+	color:#EEEEEE;
+}
+
+.nightMode nav > li *{
+	background : #212121;
+}
+
+.nightMode nav {
+	background : #010101;
+}
+
+.nightMode select {
+	background-color:darkorange;
+	color:#EEEEEE;
+}
+
+.nightMode main{
+	background:none;
+	background-color: #262626;
+}
+.nightMode .alarmContainer{
+	border:0;
+	background-color: #111111;
+	box-shadow:1px 1px 8px black;
+}
+
+.nightMode nav ul > li:hover{
+	background-color: #454545;
+}
+
+.nightMode a{
+	color:white;
+}
+
+
+
+.alarmSwitch{
+	border-bottom: solid red;
+	cursor:pointer;
+}
+
+.alarmContainer{
+	margin-top:10vh;
+	height:40vh;
+	padding:20px;
+	background-color: #eeeeee;
+	box-shadow:1px 1px 8px;
+}
+
+
+@media screen and (max-width: 680px) {
+	nav{
+		flex-direction: column;
+		margin:0;
+		padding:2px;
+	}
+	.navleft{
+		font-size:25px;
+		text-align:center;
+	}
+	ul{
+		flex-direction:column;
+		padding:0;
+	}
+	ul > li{
+		width:100%;
+		height:10vh;
+	}
+
+	main{
+		width:100%;
+	}
+
+	.nightMode > .alarmContainer{
+		width:100%;
+	}
+
+	.fontello-style{
+		font-size:50px;
+		margin-left:20px;
+	}
+}
